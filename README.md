@@ -1,3 +1,25 @@
+An attempt to create an AI that learns the player's habits in C++
+
+I've barely used C++, much less made a game in it
+
+And I've never made a game outside of basic unity stuff. So we will see how this goes, I guess. Using CMake and SFML
+
+AI difficulty will not be increased health or damage. Instead, it will have a faster "reaction time" (an artificial delay in case it gets too good at prediction and to improve fairness, ranging from 150 - 300 ms)
+
+The AI will likely use either regression, decision tree (or Random Forest), or maaaaaybe an RNN for a lightweight local RL model to predict player inputs and respond accordingly. Reinforcement will be damage to/from the player and the outcome of the game. Then, after the game is over, timestamps with the inputs, damage occurences, and outcomes will be sent to a server for a heavier DL task to fine-tune the AI, which will then be returned to the player's system so that the AI can better adapt to the user's playstyle. This will likely include sequence analysis that is somewhat similar to bioinformatics (repeated seuqence identification) to look into the player's habits a bit better.
+
+
+This project would contribute to a goal of making AI difficulty more reasonable (not just making the enemy take less damage and deal more), interesting, and even scalable. This could help to improve AI as both companions in a game, which are notoriously bad, and to serve as a competitive challenge for players that also trains them to become more adaptive themselves.
+
+
+
+
+
+
+
+
+Im leaving this stuff here for now
+
 # CMake SFML Project Template
 
 This repository template should allow for a fast and hassle-free kick start of your next SFML project using CMake.
